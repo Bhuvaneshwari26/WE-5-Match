@@ -1,0 +1,751 @@
+{
+	"info": {
+		"_postman_id": "5585ff75-6ff0-438e-b536-b3da770b77a6",
+		"name": "Student Managment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "student register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "rahul sharma",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "rahul@gmai.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rahul91",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Rahul@123",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "sdfjsdkfjsdlf",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "12-02-1993",
+							"type": "text"
+						},
+						{
+							"key": "standard",
+							"value": "10th",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7737692289",
+							"type": "text"
+						},
+						{
+							"key": "course",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "5000",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/student/add.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"student",
+						"add.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "EMP001",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Computer",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "yearly",
+							"type": "text"
+						},
+						{
+							"key": "fee",
+							"value": "5000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/course/add.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"course",
+						"add.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employe add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "rahul sharma",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "emp@gmai.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "emp91",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Rahul@123",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "sdfjsdkfjsdlf",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7737692289",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "role",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/employee/add.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"employee",
+						"add.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Attendance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "STUD001",
+							"type": "text"
+						},
+						{
+							"key": "datetime",
+							"value": "2022-01-01",
+							"type": "text"
+						},
+						{
+							"key": "present",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "remark",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/attendance/add.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"attendance",
+						"add.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add grade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "STUD001",
+							"type": "text"
+						},
+						{
+							"key": "course_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "grade",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "remark",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/grade/add.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"grade",
+						"add.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Student List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8014/student-management/student/list.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"student",
+						"list.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8014/student-management/employee/list.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"employee",
+						"list.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "STUD001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/student/profile.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"student",
+						"profile.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "STUD001",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "surbhi",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7737692289",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": "2020-02-02",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "hello",
+							"type": "text"
+						},
+						{
+							"key": "standard",
+							"value": "10th",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/student/edit.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"student",
+						"edit.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update course",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "EMP001",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "SC",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "yearly",
+							"type": "text"
+						},
+						{
+							"key": "fee",
+							"value": "4000",
+							"type": "text"
+						},
+						{
+							"key": "course_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/course/edit.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"course",
+						"edit.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "EMP001",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "surbhi",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "hello",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "role",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "7737692289",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/employee/edit.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"employee",
+						"edit.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "grade edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "STUD001",
+							"type": "text"
+						},
+						{
+							"key": "grade_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "course_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "grade",
+							"value": "B",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "hello",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/grade/edit.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"grade",
+						"edit.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8014/student-management/course/list.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"course",
+						"list.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "rahul91",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Rahul@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/login.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "course_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/course/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"course",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "emp_id",
+							"value": "EMP002",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/employee/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"employee",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "STUD002",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8014/student-management/student/delete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"student-management",
+						"student",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
